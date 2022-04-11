@@ -1,0 +1,24 @@
+.mediaPresence {
+    padding: 65px 0;
+    background-color: $SectionColor;
+}
+
+.mediaImg {
+    justify-content: center;
+    background: #a3cffc;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px
+}
+
+.mediaCardBody {
+    margin-top: 20px;
+    font-size: .9rem;
+    color: $grayColor;
+    padding: 0px 5px;
+}
+
+.mediaPresenceCard {
+    margin-bottom: 35px;
+}

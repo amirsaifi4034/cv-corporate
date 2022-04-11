@@ -1,0 +1,15 @@
+#wing1 {
+    transform-origin: center;
+    animation: flap 0.5s ease-out infinite alternate;
+}
+
+#wing2 {
+    transform-origin: center;
+    animation: flap 0.5s ease-in infinite alternate;
+}
+
+@keyframes flap {
+    50% {
+        transform: scaleX(-1) rotate(-45deg) translate(-40px, -40px);
+    }
+}
