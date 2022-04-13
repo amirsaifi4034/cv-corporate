@@ -7,12 +7,14 @@ export const HeroCard = (props) => {
     <>
     {props.herocardmain.map(herocard => 
 
-    <div key={herocard} className="text-center py-5">
+    <div key={herocard} className="py-5">
         <div className="d-flex align-items-center justify-content-center">
-            <Image src={herocard.herocard_icon} alt="university" width="40px" height="40px"></Image>
+            <Image src={herocard.herocard_icon} alt="university" width="50px" height="50px"></Image>
+          <div className="ms-3" style={{lineHeight: "15px"}}>
             <h5 className="mb-0">{herocard.herocard_rank}</h5>
+            <p className="mb-0"> <small>{herocard.herocard_title}</small> </p>
+          </div>
         </div>
-        <h6 className="mb-0 mt-2">{herocard.herocard_title}</h6>
     </div>
 
     )}

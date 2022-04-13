@@ -11,7 +11,7 @@ export const Header = () => {
                 <Navbar.Brand href="/" className="p-0 d-flex align-items-center">
                     <Image src="/logo.svg" alt="Logo" width="160" height="80"></Image>
                     <span className={styles.header}>
-                        <small>For Business</small>
+                        <small>For Business (Corporates)</small>
                         <AnimatedBirds />
                     </span>
                 </Navbar.Brand>               

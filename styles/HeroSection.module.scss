@@ -2,7 +2,7 @@
     background-image: url(/sliderHome.png);
     background-size: cover;
     background-position: center;
-    padding: 45px 0;
+    padding: 45px 0 85px;
     background-attachment: fixed;
     .herocontent {
         display: flex;
@@ -32,9 +32,35 @@
     .buttonMain {
         @include primaryButton;
         color: #fff;
-        background-color: $PrimaryColor;
+        background: $ButtonBG;
     }
     p {
         font-size: $NormalFont;
+    }
+}
+
+.heroCardIcons {
+    background-color: $SectionColor;
+    padding-top: 65px;
+}
+
+.leadForm {
+    padding: 0 10px 18px;
+    .labelAnimation {
+        @include labelPosition;
+        background-color: #dfe9f5;
+    }
+    .inputCustom {
+        @include inputField;
+        &:valid+.labelAnimation {
+            @include inputFieldFocus;
+        }
+        &:focus+.labelAnimation {
+            @include inputFieldFocus;
+        }
+    }
+    button {
+        @include primaryButton;
+        background: $ButtonBG;
     }
 }

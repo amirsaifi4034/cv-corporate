@@ -1,8 +1,11 @@
 {
     "name": "corporate",
+    "homepage": "https://amirsaifi4034.github.io/cv-corporate",
     "version": "0.1.0",
     "private": true,
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
@@ -10,6 +13,7 @@
     },
     "dependencies": {
         "bootstrap": "^5.1.3",
+        "gh-pages": "^3.2.3",
         "next": "12.1.4",
         "react": "^18.0.0",
         "react-bootstrap": "^2.2.2",

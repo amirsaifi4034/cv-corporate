@@ -1,0 +1,10 @@
+.topUniversityLogo {
+    box-shadow: 0 2px 10px 0 rgb(52 105 203 / 12%);
+    background: #fff;
+    width: 14%;
+    margin: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    @include flexCenter;
+}
