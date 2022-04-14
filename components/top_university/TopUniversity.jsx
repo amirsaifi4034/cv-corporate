@@ -222,7 +222,4 @@ export const TopUniversity = () => {
 }
 
 
-
-
-
 export default TopUniversity

@@ -38,7 +38,7 @@ export default ValueProposition
 
 const valueCard1 = [
     {
-        valueCardImg: "/discount.gif",
+        valueCardImg: "/discount.png",
         valueCardTitle : "Exclusive Corporate Discounts",
         valueCardContent : "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
     }
@@ -46,7 +46,7 @@ const valueCard1 = [
 
 const valueCard2 = [
     {
-        valueCardImg: "/best.gif",
+        valueCardImg: "/best-seller.png",
         valueCardTitle : "Best online universities to choose from",
         valueCardContent : "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
     }
@@ -54,7 +54,7 @@ const valueCard2 = [
 
 const valueCard3 = [
     {
-        valueCardImg: "/money.gif",
+        valueCardImg: "/payment.png",
         valueCardTitle : "EMI Facility Available",
         valueCardContent : "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
     }
@@ -62,7 +62,7 @@ const valueCard3 = [
 
 const valueCard4 = [
     {
-        valueCardImg: "/support.gif",
+        valueCardImg: "/support.png",
         valueCardTitle : "Dedicated Counselor Support",
         valueCardContent : "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
     }

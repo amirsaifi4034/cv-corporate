@@ -1,5 +1,12 @@
-.header {
+.tagline {
     font-size: $FontSmall;
     font-weight: bold;
     margin-left: -10px;
+}
+
+.menuItem {
+    .menuLink {
+        color: #333 !important;
+        padding: 0 18px !important;
+    }
 }

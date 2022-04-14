@@ -1,80 +1,88 @@
 
 import {Container, Row, Col} from 'react-bootstrap';
 import styles from '../../styles/MediaPresence.module.scss';
-import Image from 'next/image';
+import MediaPresenceCard from './MediaPresenceCard';
 
 export const MediaPresence = () => {
+
+    const mediaPresenceCard = [
+        {
+            id: 0,
+            mediaLogo: "/media_img/Hindustan.png",
+            mediaContent: "I wanted to create a platform that is free and",
+            mediaImg: "/media_img/media1.png"
+        },
+        {
+            id: 1,
+            mediaLogo: "/media_img/forbesindia.png",
+            mediaContent: "College Vidya is enabling information access to",
+            mediaImg: "/media_img/media2.jpg"
+        },
+        {
+            id: 2,
+            mediaLogo: "/media_img/ani.png",
+            mediaContent: "College Vidya’s goal is to bring transparency to the",
+            mediaImg: "/media_img/media3.png"
+        },
+        {
+            id: 3,
+            mediaLogo: "/media_img/webindia.png",
+            mediaContent: "Compare Feature’ is an initiative towards helping",
+            mediaImg: "/media_img/media4.png"
+        },
+        {
+            id: 4,
+            mediaLogo: "/media_img/lokmat.jpg",
+            mediaContent: "College Vidya’s Compare feature removes mediators",
+            mediaImg: "/media_img/media5.png"
+        },
+        {
+            id: 5,
+            mediaLogo: "/media_img/ly.png",
+            mediaContent: "College Vidya’s Compare is a one-stop solution for",
+            mediaImg: "/media_img/media6.png"
+        },
+        {
+            id: 6,
+            mediaLogo: "/media_img/yahoo.png",
+            mediaContent: "Get the real-time data of online and distance",
+            mediaImg: "/media_img/media7.png"
+        },
+        {
+            id: 7,
+            mediaLogo: "/media_img/financialexpress.svg",
+            mediaContent: "College Vidya's recent campaign prioritised the",
+            mediaImg: "/media_img/media8.png"
+        },
+        {
+            id: 8,
+            mediaLogo: "/media_img/edugraph-logo.svg",
+            mediaContent: "College Vidya via its recent campaign",
+            mediaImg: "/media_img/media9.png"
+        },
+        {
+            id: 9,
+            mediaLogo: "/media_img/et-brandequity.png",
+            mediaContent: "College Vidya aims to solve the career-related problems",
+            mediaImg: "/media_img/media10.png"
+        },
+        {
+            id: 10,
+            mediaLogo: "/media_img/the-hindu.png",
+            mediaContent: "College Vidya has launched a brand ifilm to encourage",
+            mediaImg: "/media_img/media11.png"
+        }
+    ]
   return (
     <div className={styles.mediaPresence}>
         <Container>
-            <Row>
+            <Row className={`${styles.mediaRow}`}>
                 <Col sm={12}>
                     <h3 className="text-center mb-5">Media Presence</h3>
                 </Col>
-                <Col sm={8} className="offset-sm-2">
-                    <Row>
-                        <Col sm={4}>
-                            <div className={styles.mediaPresenceCard}>
-                                <div className={styles.mediaImg}>
-                                    <Image src="/forbes-logo.png" width="85px" height="20px" alt="Meida"></Image>
-                                </div>
-                                <div className={styles.mediaCardBody}>
-                                    <p>College Vidya is enabling information access to students</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col sm={4}>
-                            <div className={`${styles.mediaPresenceCard} ${styles.mediaCardActive}`}>
-                                <div className={styles.mediaImg}>
-                                    <Image src="/hindustan-times.png" width="85px" height="20px" alt="Meida"></Image>
-                                </div>
-                                <div className={styles.mediaCardBody}>
-                                    <p>College Vidya becomes the only dedicated portal for distance & online education</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col sm={4}>
-                            <div className={styles.mediaPresenceCard}>
-                                <div className={styles.mediaImg}>
-                                    <Image src="/ani-press.png" width="85px" height="20px" alt="Meida"></Image>
-                                </div>
-                                <div className={styles.mediaCardBody}>
-                                    <p>College Vidya launches Compare Feature, bringing transparency in Online & Distance Learning  </p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col sm={4}>
-                            <div className={styles.mediaPresenceCard}>
-                                <div className={styles.mediaImg}>
-                                    <Image src="/webindia-press.png" width="85px" height="20px" alt="Meida"></Image>
-                                </div>
-                                <div className={styles.mediaCardBody}>
-                                    <p>College Vidya becomes the only dedicated portal for distance & online education</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col sm={4}>
-                            <div className={`${styles.mediaPresenceCard} ${styles.mediaCardActive}`}>
-                                <div className={styles.mediaImg}>
-                                    <Image src="/yahoo-press.png" width="85px" height="20px" alt="Meida"></Image>
-                                </div>
-                                <div className={styles.mediaCardBody}>
-                                    <p>College Vidya becomes the only dedicated portal for distance & online education</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col sm={4}>
-                            <div className={styles.mediaPresenceCard}>
-                                <div className={styles.mediaImg}>
-                                    <Image src="/lokmattimes-press.png" width="85px" height="20px" alt="Meida"></Image>
-                                </div>
-                                <div className={styles.mediaCardBody}>
-                                    <p>College Vidya becomes the only dedicated portal for distance & online education</p>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Col>
+                {mediaPresenceCard.map(mediaCard => 
+                    <MediaPresenceCard key={mediaCard.id} mediaPresenceCard={mediaCard} />
+                )}
             </Row>
         </Container>
     </div>

@@ -1,24 +1,43 @@
 .mediaPresence {
     padding: 65px 0;
     background-color: $SectionColor;
+    .mediaPresenceCard {
+        margin-bottom: 35px;
+        padding: 0 12px 15px;
+        background: #fff;
+        box-shadow: $BoxShadow;
+        font-size: 0.9rem;
+        .mediaImg {
+            height: 80px;
+            img {
+                min-height: auto !important;
+                height: auto !important;
+                min-width: auto !important;
+                width: auto !important;
+                margin: auto 0 !important;
+            }
+        }
+    }
 }
 
-.mediaImg {
-    justify-content: center;
-    background: #a3cffc;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    border-radius: 5px
-}
-
-.mediaCardBody {
-    margin-top: 20px;
-    font-size: .9rem;
-    color: $grayColor;
-    padding: 0px 5px;
-}
-
-.mediaPresenceCard {
-    margin-bottom: 35px;
+.readmoreText {
+    position: relative;
+    z-index: 1;
+    &:hover {
+        color: #333;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        width: 50%;
+        height: 4px;
+        background-color: #a3d4ff;
+        z-index: -1;
+        transition: all .2s ease-in-out;
+    }
+    &:hover:before {
+        width: 100%;
+    }
 }
