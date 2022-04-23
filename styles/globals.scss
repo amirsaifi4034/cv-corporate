@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Ubuntu, sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -23,4 +24,10 @@ a {
 .modalForm .modal-content {
     width: 90%;
     margin: auto;
+}
+
+@media (max-width: 991px) {
+    h1 {
+        font-size: 1.6rem;
+    }
 }

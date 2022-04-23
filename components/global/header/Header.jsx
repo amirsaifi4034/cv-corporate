@@ -2,10 +2,15 @@ import { Navbar, Container, Nav} from "react-bootstrap";
 import Image from 'next/image';
 import styles from "/styles/Header.module.scss";
 import AnimatedBirds from "/components/birds/AnimatedBirds"
+import { useState } from "react";
 
 export const Header = () => {
+
+    const [toggle, setToggle] = useState(false);
+
   return (
     <>
+    <header className={styles.headerMain}>
         <Navbar expand="lg">
             <Container>
                 <Navbar.Brand href="/" className="p-0 d-flex align-items-center">
@@ -15,7 +20,12 @@ export const Header = () => {
                         <AnimatedBirds />
                     </span>
                 </Navbar.Brand>
-                <Nav className={`${styles.menuItem} ms-auto`}>
+                <button type="button" onClick={() => setToggle(!toggle)} className={`${styles.toggleButton} ${toggle ? styles.activeToggle : ''} d-lg-none d-block`}>
+                    <span className={`${styles.iconBar}`}></span>
+                    <span className={`${styles.iconBar}`}></span>
+                    <span className={`${styles.iconBar}`}></span>
+                </button>
+                <Nav className={`${styles.menuItem} ${toggle ? styles.activeMainMenu : ''} ms-auto d-none d-lg-flex`}>
                     <Nav.Link href="/" className={styles.menuLink}>Home</Nav.Link>
                     <Nav.Link href="/" className={styles.menuLink}>About us</Nav.Link>
                     <Nav.Link href="/" className={styles.menuLink}>Blog</Nav.Link>
@@ -23,6 +33,7 @@ export const Header = () => {
                 </Nav>           
             </Container>
         </Navbar>
+    </header>
     </>
   )
 }

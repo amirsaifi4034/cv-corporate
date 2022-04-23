@@ -8,6 +8,7 @@
         display: flex;
         align-items: center;
         height: 100%;
+        padding-right: 45px;
     }
     .heroImg {
         position: relative;
@@ -62,5 +63,59 @@
     button {
         @include primaryButton;
         background: $ButtonBG;
+    }
+}
+
+// ------------------------ //
+@media (max-width: 991px) {
+    .herobanner {
+        .row {
+            flex-direction: row-reverse;
+        }
+        padding-top: 85px;
+        p,
+        .buttonMain {
+            font-size: 1rem;
+        }
+        .herocontent {
+            padding-right: 0 !important;
+            padding-left: 35px;
+        }
+    }
+}
+
+// ------------------------ //
+@media (max-width: 767px) {
+    .herobanner {
+        .heroImg {
+            top: 0;
+            text-align: center;
+            .dotsPettern {
+                display: none;
+            }
+            .bgShad {
+                display: none;
+            }
+        }
+    }
+}
+
+// ------------------------ //
+@media (max-width: 575px) {
+    .herobanner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .columnReverse {
+            flex-direction: column-reverse !important;
+            .heroImg {
+                margin-bottom: 30px;
+            }
+            .herocontent {
+                padding-left: 0 !important;
+            }
+        }
+    }
+    .heroCardIcons {
+        padding-top: 35px;
     }
 }

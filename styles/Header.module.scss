@@ -4,9 +4,82 @@
     margin-left: -10px;
 }
 
-.menuItem {
-    .menuLink {
-        color: #333 !important;
-        padding: 0 18px !important;
+.headerMain {
+    box-shadow: 0px 5px 9px #0000000d;
+    position: relative;
+    .menuItem {
+        .menuLink {
+            color: #333 !important;
+            padding: 0 18px !important;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .headerMain {
+        .menuItem {
+            display: block !important;
+            position: fixed;
+            top: 90px;
+            left: 0;
+            background: #ffff;
+            width: 100%;
+            height: 0%;
+            z-index: 999;
+            overflow: hidden;
+            opacity: 0;
+            transition: height 0.4s, opacity 0.3s;
+            .menuLink {
+                padding: 8px 18px !important;
+            }
+        }
+        .toggleButton {
+            border: none;
+            background: transparent !important;
+            &:focus-visible {
+                outline: none;
+            }
+            .iconBar {
+                width: 27px;
+                transition: all 0.3s ease-in-out;
+                border-bottom: 2px solid #000;
+                display: block;
+                margin-bottom: 6px;
+                &:nth-child(3) {
+                    margin-bottom: 0px;
+                }
+                &:nth-child(2) {
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+        }
+    }
+    .headerMain {
+        .toggleButton.activeToggle {
+            .iconBar {
+                &:nth-child(2) {
+                    visibility: hidden;
+                    margin: 0;
+                }
+                &:nth-child(1) {
+                    transform: rotate(45deg);
+                    transform-origin: 20% 20%;
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                    transform-origin: 25% 90%;
+                }
+            }
+        }
+        .activeMainMenu {
+            height: 100%;
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .tagline {
+        display: none;
     }
 }

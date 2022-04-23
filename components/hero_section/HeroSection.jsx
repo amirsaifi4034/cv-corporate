@@ -17,7 +17,7 @@ export const HeroSection = () => {
     
     <section className={`${styles.herobanner}`}>
         <Container>
-            <Row>
+            <Row className={`${styles.columnReverse} flex-row-reverse flex-lg-row`}>
                 <Col sm={7}>
                     <div className={`${styles.herocontent}`}>
                         <div>
@@ -40,12 +40,12 @@ export const HeroSection = () => {
     <section className={styles.heroCardIcons}>
         <Container>
             <Row>
-                <Col sm={8} className="offset-sm-2">
+                <Col lg={`${8} offset-lg-2`}>
                     <Row>
-                        <Col sm={4}>
+                        <Col sm={4} xs={6}>
                             <HeroCard herocardmain={herocard1} />
                         </Col>
-                        <Col sm={4}>
+                        <Col sm={4} xs={6}>
                             <HeroCard herocardmain={herocard2} />
                         </Col>
                         <Col sm={4}>

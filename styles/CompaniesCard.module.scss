@@ -4,3 +4,10 @@
     margin: 20px 12px;
     width: 200px;
 }
+
+@media (max-width: 575px) {
+    .companiesLogo {
+        padding: 0;
+        width: 120px;
+    }
+}

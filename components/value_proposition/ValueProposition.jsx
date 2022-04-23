@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export const ValueProposition = () => {
 
-    const [cardActive, setcardActive] = useState(true);
+    const [cardActive, setcardActive] = useState(false);
     
   return (
     <>
@@ -15,16 +15,16 @@ export const ValueProposition = () => {
                     <Col sm={12}>
                         <h3 className="text-center mb-5">Value Propositions</h3>
                     </Col>
-                    <Col sm={3}>
+                    <Col sm={`${6} mb-4 mb-lg-0`} lg={3}>
                         <ValueProCard extraclass={cardActive ? true : false} valueCardDiv={valueCard1} />
                     </Col>
-                    <Col sm={3}>
+                    <Col sm={`${6} mb-4 mb-lg-0`} lg={3}>
                         <ValueProCard valueCardDiv={valueCard2} />
                     </Col>
-                    <Col sm={3}>
+                    <Col sm={`${6} mb-4 mb-lg-0`} lg={3}>
                         <ValueProCard valueCardDiv={valueCard3} />
                     </Col>
-                    <Col sm={3}>
+                    <Col sm={`${6} mb-4 mb-lg-0`} lg={3}>
                         <ValueProCard valueCardDiv={valueCard4} />
                     </Col>
                 </Row>
