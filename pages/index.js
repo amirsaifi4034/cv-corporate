@@ -6,6 +6,7 @@ import Header from '../components/global/header/Header';
 import TrustedCompanies from '../components/trusted_companies/TrustedCompanies';
 import MediaPresence from '../components/media_presence/MediaPresence';
 import Footer from '../components/global/footer/Footer';
+import TalkExperts from '../components/global/talk_experts/TalkExperts';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <ValueProposition />
       <TrustedCompanies />
       <MediaPresence />
+      <TalkExperts />
       <Footer />
     </>
   )

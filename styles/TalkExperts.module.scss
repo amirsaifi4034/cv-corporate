@@ -1,0 +1,17 @@
+.TalkExpertsText {
+    h2 {
+        color: $PrimaryColor;
+    }
+    .expertButton {
+        background: $ButtonBG;
+    }
+}
+
+.expertsMain {
+    display: flex;
+    flex-wrap: wrap;
+    .expertsMain {
+        width: 32%;
+        margin: 3px;
+    }
+}

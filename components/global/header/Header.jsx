@@ -1,7 +1,7 @@
 import { Navbar, Container, Nav} from "react-bootstrap";
 import Image from 'next/image';
 import styles from "/styles/Header.module.scss";
-import AnimatedBirds from "/components/birds/AnimatedBirds"
+import AnimatedBirds from "/components/birds/AnimatedBirds";
 import { useState } from "react";
 
 export const Header = () => {

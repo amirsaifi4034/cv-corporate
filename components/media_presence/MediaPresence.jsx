@@ -2,6 +2,10 @@
 import {Container, Row, Col} from 'react-bootstrap';
 import styles from '../../styles/MediaPresence.module.scss';
 import MediaPresenceCard from './MediaPresenceCard';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from 'swiper';
+import "swiper/css";
+import "swiper/css/navigation";
 
 export const MediaPresence = () => {
 
@@ -79,10 +83,19 @@ export const MediaPresence = () => {
             <Row className={`${styles.mediaRow}`}>
                 <Col sm={12}>
                     <h3 className="text-center mb-5">Media Presence</h3>
-                </Col>
-                {mediaPresenceCard.map(mediaCard => 
-                    <MediaPresenceCard key={mediaCard.id} mediaPresenceCard={mediaCard} />
-                )}
+                    <Swiper 
+                        navigation={true} 
+                        modules={[Navigation]}
+                        slidesPerView={4}
+                        spaceBetween={20} 
+                        className="mediaPresence_slider">
+                        {mediaPresenceCard.map(mediaCard =>
+                            <SwiperSlide>
+                                <MediaPresenceCard key={mediaCard.id} mediaPresenceCard={mediaCard} />
+                            </SwiperSlide>
+                        )}  
+                    </Swiper>
+                </Col>                    
             </Row>
         </Container>
     </div>

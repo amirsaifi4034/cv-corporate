@@ -8,7 +8,7 @@ export const MediaPresenceCard = (props) => {
   return (
     <>
         
-        <Col md={4} lg={3} xs={6}>
+        <Col sm={12}>
             <div className={`${styles.mediaPresenceCard} rounded`}>
                 <div className={`${styles.mediaImg} position-relative rounded`}>
                     <Image src={props.mediaPresenceCard.mediaLogo} layout="fill" alt="Media"></Image>

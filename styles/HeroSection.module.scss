@@ -2,7 +2,7 @@
     background-image: url(/sliderHome.png);
     background-size: cover;
     background-position: center;
-    padding: 45px 0 85px;
+    padding: 85px 0;
     background-attachment: fixed;
     .herocontent {
         display: flex;
@@ -43,6 +43,12 @@
 .heroCardIcons {
     background-color: $SectionColor;
     padding-top: 65px;
+    .heroIconsRow {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 10px 10px $PrimaryColor;
+        border: 1px solid #eee;
+    }
 }
 
 .leadForm {

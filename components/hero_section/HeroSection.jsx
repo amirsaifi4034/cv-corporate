@@ -40,8 +40,8 @@ export const HeroSection = () => {
     <section className={styles.heroCardIcons}>
         <Container>
             <Row>
-                <Col lg={`${8} offset-lg-2`}>
-                    <Row>
+                <Col lg={`${10} offset-lg-1`}>
+                    <Row className={styles.heroIconsRow}>
                         <Col sm={4} xs={6}>
                             <HeroCard herocardmain={herocard1} />
                         </Col>
