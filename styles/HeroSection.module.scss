@@ -1,14 +1,19 @@
 .herobanner {
-    background-image: url(/sliderHome.png);
     background-size: cover;
     background-position: center;
-    padding: 85px 0;
+    padding: 65px 0;
     background-attachment: fixed;
     .herocontent {
         display: flex;
         align-items: center;
         height: 100%;
         padding-right: 45px;
+    }
+    .heroImgFrame {
+        height: 100%;
+        position: absolute;
+        bottom: 13%;
+        right: -22%;
     }
     .heroImg {
         position: relative;
@@ -22,18 +27,25 @@
             left: -42px;
         }
         .bgShad {
-            background: #f1f5fd;
+            background: #dbeeff;
             top: 30px;
             left: 30px;
-            width: 100%;
+            width: 90%;
             height: 100%;
             position: absolute;
+            border-radius: 5px;
         }
     }
     .buttonMain {
         @include primaryButton;
-        color: #fff;
-        background: $ButtonBG;
+        background: transparent;
+        color: $PrimaryColor;
+        border: 2px solid $PrimaryColor;
+        &:hover {
+            background: $ButtonBG;
+            color: #fff;
+            border-color: transparent;
+        }
     }
     p {
         font-size: $NormalFont;
@@ -51,8 +63,13 @@
     }
 }
 
+.popFormImg {
+    width: 45%;
+}
+
 .leadForm {
-    padding: 0 10px 18px;
+    padding: 0 35px 18px;
+    width: 55%;
     .labelAnimation {
         @include labelPosition;
         background-color: #dfe9f5;
@@ -66,9 +83,23 @@
             @include inputFieldFocus;
         }
     }
-    button {
+    .modalButton {
         @include primaryButton;
         background: $ButtonBG;
+    }
+}
+
+.modalHeader {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80px;
+        border-bottom: 2px solid #027bdb;
+        bottom: -10px;
     }
 }
 

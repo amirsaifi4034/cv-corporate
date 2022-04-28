@@ -46,6 +46,13 @@ a {
     }
 }
 
+.modal-backdrop {
+    background-image: linear-gradient(to right bottom, #0074d7, #0096eb, #00b5ef, #00d2e6, #12ebd8);
+    &.show {
+        opacity: 1;
+    }
+}
+
 @media (max-width: 991px) {
     h1 {
         font-size: 1.6rem;
