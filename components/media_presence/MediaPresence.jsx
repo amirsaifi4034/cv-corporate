@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 
 export const MediaPresence = () => {
 
-    const mediaPresenceCard = [
+    const mediaPresenceCards = [
         {
             id: 0,
             mediaLogo: "/media_img/Hindustan.png",
@@ -77,6 +77,18 @@ export const MediaPresence = () => {
             mediaImg: "/media_img/media11.png"
         }
     ]
+    const breakpoints = {
+        
+        '992': {
+            slidesPerView: 4
+        },
+        '768': {
+            slidesPerView: 3
+        },
+        '576': {
+            slidesPerView: 2
+        }
+    }
   return (
     <div className={styles.mediaPresence}>
         <Container>
@@ -84,12 +96,13 @@ export const MediaPresence = () => {
                 <Col sm={12}>
                     <h3 className="text-center mb-5">Media Presence</h3>
                     <Swiper 
+                        breakpoints={breakpoints}
                         navigation={true} 
+                        slidesPerView={2}
                         modules={[Navigation]}
-                        slidesPerView={4}
                         spaceBetween={20} 
                         className="mediaPresence_slider">
-                        {mediaPresenceCard.map(mediaCard =>
+                        {mediaPresenceCards.map(mediaCard =>
                             <SwiperSlide>
                                 <MediaPresenceCard key={mediaCard.id} mediaPresenceCard={mediaCard} />
                             </SwiperSlide>

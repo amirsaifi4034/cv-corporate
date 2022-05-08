@@ -53,6 +53,23 @@ a {
     }
 }
 
+.form-floating>label {
+    padding: .3rem .75rem;
+    font-size: 15px;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    padding: 0 .5rem;
+    background: #fff;
+    opacity: 1;
+    border-radius: 5px;
+    top: -8px;
+    left: 6px;
+    height: fit-content;
+}
+
 @media (max-width: 991px) {
     h1 {
         font-size: 1.6rem;

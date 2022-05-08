@@ -25,40 +25,40 @@ export const Footer = () => {
                 </div>
                 <div className={styles.social_icons}>
                   <Nav>
-                    <Nav.Link href="/" className='text-white p-2'><BsFacebook /></Nav.Link>
-                    <Nav.Link href="/" className='text-white p-2'><BsTwitter /></Nav.Link>
-                    <Nav.Link href="/" className='text-white p-2'><BsLinkedin /></Nav.Link>
-                    <Nav.Link href="/" className='text-white p-2'><BsYoutube /></Nav.Link>
-                    <Nav.Link href="/" className='text-white p-2'><BsInstagram /></Nav.Link>
+                    <Nav.Link href="/" className='text-white py-1 py-md-2'><BsFacebook /></Nav.Link>
+                    <Nav.Link href="/" className='text-white py-1 py-md-2'><BsTwitter /></Nav.Link>
+                    <Nav.Link href="/" className='text-white py-1 py-md-2'><BsLinkedin /></Nav.Link>
+                    <Nav.Link href="/" className='text-white py-1 py-md-2'><BsYoutube /></Nav.Link>
+                    <Nav.Link href="/" className='text-white py-1 py-md-2'><BsInstagram /></Nav.Link>
                   </Nav>
                 </div>
               </div>
             </Col>
             <Col sm={3}>
-              <div className="">
+              <div className={styles.footerItemList}>
                 <h5 className="pb-2">Useful link</h5>
-                  <Nav.Link href="/" className='text-white p-2'> <small>About us</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Blog</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Contact us</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Our Trust</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>About us</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Blog</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Contact us</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Our Trust</small> </Nav.Link>
               </div>
             </Col>
             <Col sm={3}>
-              <div className="">
+              <div className={styles.footerItemList}>
                 <h5 className="pb-2">Useful link</h5>
-                  <Nav.Link href="/" className='text-white p-2'> <small>About us</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Blog</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Contact us</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Our Trust</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>About us</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Blog</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Contact us</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Our Trust</small> </Nav.Link>
               </div>
             </Col>
             <Col sm={3}>
-              <div className="">
+              <div className={styles.footerItemList}>
                 <h5 className="pb-2">Useful link</h5>
-                  <Nav.Link href="/" className='text-white p-2'> <small>About us</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Blog</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Contact us</small> </Nav.Link>
-                  <Nav.Link href="/" className='text-white p-2'> <small>Our Trust</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>About us</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Blog</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Contact us</small> </Nav.Link>
+                  <Nav.Link href="/" className='text-white py-1 py-md-2'> <small>Our Trust</small> </Nav.Link>
               </div>
             </Col>
           </Row>

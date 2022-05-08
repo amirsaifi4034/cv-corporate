@@ -11,7 +11,13 @@
     display: flex;
     flex-wrap: wrap;
     .expertsMain {
-        width: 32%;
+        width: 31%;
         margin: 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    .TalkExpertsText {
+        padding: 30px 0;
     }
 }

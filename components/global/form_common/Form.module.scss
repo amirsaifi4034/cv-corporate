@@ -1,0 +1,26 @@
+.formMain {
+    .labelAnimation {
+        background-color: #dfe9f5;
+    }
+    .inputCustom {
+        @include inputField;
+    }
+    .modalHeader {
+        position: relative;
+        font-size: 18px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 80px;
+            border-bottom: 2px solid #027bdb;
+            bottom: -10px;
+        }
+    }
+    .modalButton {
+        @include primaryButton;
+        background: $ButtonBG;
+    }
+}

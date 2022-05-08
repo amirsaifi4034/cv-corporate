@@ -6,7 +6,7 @@ export const BannerWithFrame = () => {
   return (
     <>
         <div className={`${styles.heroImgFrame}`}>
-            <Image src="/smartphone.png" className="rounded" alt="Corporate" height="400" width="400"></Image>
+            {/* <Image src="/smartphone.png" className="rounded" alt="Corporate" height="400" width="400"></Image> */}
         </div>
     </>
   )

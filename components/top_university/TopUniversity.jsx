@@ -23,111 +23,111 @@ export const TopUniversity = () => {
             logoImg: "/university_logo/04Sv-uNiversity.png"
         },
         {
-            id: 5,
+            id: 4,
             logoImg: "/university_logo/Jain-University.jpg"
         },
         {
-            id: 6,
+            id: 5,
             logoImg: "/university_logo/Acharya-Nagarjuna.png"
         },
         {
-            id: 7,
+            id: 6,
             logoImg: "/university_logo/Amity-University.png"
         },
         {
-            id: 8,
+            id: 7,
             logoImg: "/university_logo/andhra-university.png"
         },
         {
-            id: 9,
+            id: 8,
             logoImg: "/university_logo/bits-pilani.png"
         },
         {
-            id: 10,
+            id: 9,
             logoImg: "/university_logo/calorx-teacger.png"
         },
         {
-            id: 11,
+            id: 10,
             logoImg: "/university_logo/dayalbaghuniversity.png"
         },
         {
-            id: 12,
+            id: 11,
             logoImg: "/university_logo/Delhi-technology-university.png"
         },
         {
-            id: 13,
+            id: 12,
             logoImg: "/university_logo/Devi-Ahilya.png"
         },
         {
-            id: 14,
+            id: 13,
             logoImg: "/university_logo/DR-cv-Raman-University.png"
         },
         {
-            id: 15,
+            id: 14,
             logoImg: "/university_logo/guru-jambheshwar.png"
         },
         {
-            id: 16,
+            id: 15,
             logoImg: "/university_logo/ICFAI.png"
         },
         {
-            id: 17,
+            id: 16,
             logoImg: "/university_logo/ignou.png"
         },
         {
-            id: 18,
+            id: 17,
             logoImg: "/university_logo/imt.png"
         },
         {
-            id: 19,
+            id: 18,
             logoImg: "/university_logo/integral-University.png"
         },
         {
-            id: 20,
+            id: 19,
             logoImg: "/university_logo/jagannath.png"
         },
         {
-            id: 21,
+            id: 20,
             logoImg: "/university_logo/Jain-University.jpg"
         },
         {
-            id: 22,
+            id: 21,
             logoImg: "/university_logo/jain-vishwabharati.png"
         },
         {
-            id: 23,
+            id: 22,
             logoImg: "/university_logo/jamia-millia-university.png"
         },
         {
-            id: 24,
+            id: 23,
             logoImg: "/university_logo/jnu.png"
         },
         {
-            id: 25,
+            id: 24,
             logoImg: "/university_logo/kalinga-University.png"
         },
         {
-            id: 26,
+            id: 25,
             logoImg: "/university_logo/Karnataka-State-Open-Univesity.png"
         },
         {
-            id: 27,
+            id: 26,
             logoImg: "/university_logo/kuvempu-University.png"
         },
         {
-            id: 28,
+            id: 27,
             logoImg: "/university_logo/lingayash.png"
         },
         {
-            id: 29,
+            id: 28,
             logoImg: "/university_logo/lovely-professional.png"
         },
         {
-            id: 30,
+            id: 29,
             logoImg: "/university_logo/maharishi-international-university.png"
         },
         {
-            id: 47,
+            id: 30,
             logoImg: "/university_logo/mangalora-University.png"
         },
         {
@@ -195,7 +195,7 @@ export const TopUniversity = () => {
             logoImg: "/university_logo/University-of-north-bengal.png"
         },
         {
-            id: 48,
+            id: 47,
             logoImg: "/university_logo/upes.png"
         }
 

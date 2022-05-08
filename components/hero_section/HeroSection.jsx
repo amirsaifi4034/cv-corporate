@@ -1,11 +1,11 @@
 
-import { Container, Row, Col, Modal, Button, Form } from "react-bootstrap";
+import { Container, Row, Col, Modal, Button } from "react-bootstrap";
 import Image from "next/image";
 import styles from "/styles/HeroSection.module.scss";
 import HeroCard from "../../components/hero_section/HeroCard";
 import { useState } from "react";
 import { HeroBannerRight } from "./HeroBannerRight";
-import { BannerWithFrame } from "./BannerWithFrame";
+import FormCommon from "../global/form_common/FormCommon";
 
 
 export const HeroSection = () => {
@@ -17,17 +17,20 @@ export const HeroSection = () => {
     
     <section className={`${styles.herobanner}`}>
         <Container>
-            <Row className={`${styles.columnReverse} flex-row-reverse flex-lg-row`}>
+            <Row className={`${styles.columnReverse} flex-row-reverse flex-lg-row position-relative`}>
                 <Col sm={7}>
                     <div className={`${styles.herocontent}`}>
                         <div>
-                            <h1>Helping workforce to enhance their career & enable business success</h1>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, corrupti earum. </p>
+                            <h1>Helping workforce to enhance their career and enable business success</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, corrupti earum</p>
                             <Button  onClick={() => setShow(true)} className={`${styles.buttonMain}`}>Get Started</Button>
                         </div>
                     </div>
                 </Col>
                 <Col sm={5} className="position-relative">
+                    {/* <div className={styles.homeForm}>
+                        <FormCommon />
+                    </div> */}
                     <HeroBannerRight />
                 </Col>
             </Row>
@@ -67,58 +70,7 @@ export const HeroSection = () => {
                 </div>
                 <div className={styles.leadForm}>
                     <Modal.Header style={{marginRight: "-15px"}} className="border-0 p-0 mt-3" closeButton></Modal.Header>
-                    <Form>
-                        <div className={styles.formHeader}>
-                            <Modal.Title className={`${styles.modalHeader} text-center mb-5`}>Talk with our experts</Modal.Title>
-                        </div>
-                        <Form.Group className="mb-4 position-relative" controlId="formBasicName">
-                            <Form.Control required className={styles.inputCustom} type="text"  />
-                            <Form.Text className={`${styles.labelAnimation} text-muted`}>
-                            Full Name
-                            </Form.Text>
-                        </Form.Group>
-                        <Form.Group className="mb-4 position-relative" controlId="formBasicNumber">
-                            <Form.Control required className={styles.inputCustom} type="tel" min="10" max="10" pattern="^\d{10}$" />
-                            <Form.Text className={`${styles.labelAnimation} text-muted`}>
-                                Phone Number
-                            </Form.Text>
-                        </Form.Group>
-                        <Row className="g-2">
-                            <Col md>
-                                <Form.Group className="mb-4 position-relative" controlId="formBasicEmail">
-                                    <Form.Control required className={styles.inputCustom} type="email"  />
-                                    <Form.Text className={`${styles.labelAnimation} text-muted`}>
-                                        Work Email
-                                    </Form.Text>
-                                </Form.Group>
-                            </Col>
-                            <Col md>
-                            <Form.Group className="mb-4 position-relative" controlId="formBasicTitle">
-                                <Form.Control required className={styles.inputCustom} type="text"  />
-                                <Form.Text className={`${styles.labelAnimation} text-muted`}>
-                                    Job Title
-                                </Form.Text>
-                            </Form.Group>
-                            </Col>
-                        </Row>
-                        <Form.Group className="mb-4 position-relative" controlId="formBasicCompany">
-                            <Form.Control required className={styles.inputCustom} type="text" />
-                            <Form.Text className={`${styles.labelAnimation} text-muted`}>
-                                Company
-                            </Form.Text>
-                        </Form.Group>
-                        <Form.Group className="mb-4 position-relative" controlId="formBasicEmployess">
-                            <Form.Control required className={styles.inputCustom} type="text" />
-                            <Form.Text className={`${styles.labelAnimation} text-muted`}>
-                                Employees
-                            </Form.Text>
-                        </Form.Group>
-                        <div className="text-center">
-                        <Button name="submit" style={{borderRadius: "10px"}} type="submit" className={styles.modalButton}>
-                            Submit
-                        </Button>
-                        </div>
-                    </Form>
+                    <FormCommon />
                 </div>
             </div>
         </Modal.Body>

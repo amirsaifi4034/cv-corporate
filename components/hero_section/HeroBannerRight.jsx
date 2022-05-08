@@ -6,9 +6,9 @@ export const HeroBannerRight = () => {
   return (
     <>
         <div className={`${styles.heroImg}`}>
-            <div className={`${styles.dotsPettern}`}></div>
-            <div className={`${styles.bgShad}`}></div>
-            <Image src="/corporate.jpg" className="rounded" alt="Corporate" height="350" width="400"></Image>
+            {/* <div className={`${styles.dotsPettern}`}></div> */}
+            {/* <div className={`${styles.bgShad}`}></div> */}
+            <Image src="/corporate.jpg" className="rounded" alt="Corporate" height="380" width="480"></Image>
         </div>
     </>
   )

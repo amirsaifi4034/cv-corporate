@@ -5,12 +5,21 @@
 }
 
 .headerMain {
-    box-shadow: 0px 5px 9px #0000000d;
+    box-shadow: 0px 3px 5px rgb(0 0 0 / 2%);
     position: relative;
+    z-index: 99;
+    background: #fff;
     .menuItem {
         .menuLink {
             color: #333 !important;
             padding: 0 18px !important;
+        }
+        .menuTopUni {
+            @include primaryButton;
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+            font-size: 16px;
+            border: 1px solid;
         }
     }
 }
@@ -20,7 +29,7 @@
         .menuItem {
             display: block !important;
             position: fixed;
-            top: 90px;
+            top: 82px;
             left: 0;
             background: #ffff;
             width: 100%;
