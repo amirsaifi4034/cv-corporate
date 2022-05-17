@@ -21,7 +21,7 @@ export const HeroSection = () => {
                 <Col sm={7}>
                     <div className={`${styles.herocontent}`}>
                         <div>
-                            <h1>Helping workforce to enhance their career and enable business success</h1>
+                            <h1>Helping workforce to enhance their career and enable <span className="text-primary">business success</span></h1>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, corrupti earum</p>
                             <Button  onClick={() => setShow(true)} className={`${styles.buttonMain}`}>Get Started</Button>
                         </div>
@@ -42,13 +42,13 @@ export const HeroSection = () => {
                 <Col lg={`${10} offset-lg-1`}>
                     <Row className={styles.heroIconsRow}>
                         <Col sm={4} xs={6}>
-                            <HeroCard herocardmain={herocard1} />
+                            <HeroCard herocardmain={herocard1} style={{background: "red"}} />
                         </Col>
                         <Col sm={4} xs={6}>
-                            <HeroCard herocardmain={herocard2} />
+                            <HeroCard herocardmain={herocard2} style={{background: "red"}} />
                         </Col>
                         <Col sm={4}>
-                            <HeroCard herocardmain={herocard3} />
+                            <HeroCard herocardmain={herocard3} style={{background: "red"}} />
                         </Col>
                     </Row>
                 </Col>
@@ -86,7 +86,8 @@ const herocard1 = [
     {
         herocard_icon : "/scholarship.png",
         herocard_rank : "75+",
-        herocard_title : "Online Universities"
+        herocard_title : "Online Universities",
+        extra_class: styles.hero1_class
     }
 ]
 
@@ -94,7 +95,8 @@ const herocard2 = [
     {
         herocard_icon : "/handshake.png",
         herocard_rank : "1349+",
-        herocard_title : "Corporate partners"
+        herocard_title : "Corporate partners",
+        extra_class: styles.hero2_class
     }
 ]
 
@@ -102,6 +104,7 @@ const herocard3 = [
     {
         herocard_icon : "/strategy-development.png",
         herocard_rank : "100%",
-        herocard_title : "Business outcome"
+        herocard_title : "Business outcome",
+        extra_class: styles.hero3_class
     }
 ]

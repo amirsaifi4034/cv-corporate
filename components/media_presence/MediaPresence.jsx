@@ -94,7 +94,7 @@ export const MediaPresence = () => {
         <Container>
             <Row className={`${styles.mediaRow}`}>
                 <Col sm={12}>
-                    <h3 className="text-center mb-5">Media Presence</h3>
+                    <h3 className="text-center mb-5">Voice of our Leaders & Media Presence</h3>
                     <Swiper 
                         breakpoints={breakpoints}
                         navigation={true} 

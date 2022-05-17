@@ -40,6 +40,7 @@
     }
     .heroImg {
         position: relative;
+        text-align: center;
         .dotsPettern {
             background-image: radial-gradient(#3f78e0 2px, transparent 2.5px);
             background-size: 0.8rem 0.9rem;
@@ -61,13 +62,14 @@
     }
     .buttonMain {
         @include primaryButton;
-        background: transparent;
         color: $PrimaryColor;
-        border: 1px solid $PrimaryColor;
+        background: $ButtonBG;
+        color: #fff;
+        border: 2px solid $PrimaryColor;
+        transition: all .3s ease-in-out;
         &:hover {
-            background: $ButtonBG;
-            color: #fff;
-            border-color: transparent;
+            transform: translateY(-1px);
+            box-shadow: 2px 7px 11px rgba(0, 0, 0, 0.329);
         }
     }
     p {
@@ -79,11 +81,14 @@
 .heroCardIcons {
     background-color: $SectionColor;
     padding-top: 65px;
-    .heroIconsRow {
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 10px 10px $PrimaryColor;
-        border: 1px solid #eee;
+    .hero1_class {
+        background: #dc3545;
+    }
+    .hero2_class {
+        background: #3f78e0;
+    }
+    .hero3_class {
+        background: orange;
     }
 }
 
